@@ -51,9 +51,3 @@ internal fun CommonExtension<*, *, *, *, *, *>.setupNameSpace(project: Project) 
 
     namespace = "${DefaultConfig.APPLICATION_ID}$moduleName"
 }
-
-internal val Project.libs: VersionCatalog
-    get() {
-        return project.extensions.getByType<VersionCatalogsExtension>()
-            .named("libs")
-    }

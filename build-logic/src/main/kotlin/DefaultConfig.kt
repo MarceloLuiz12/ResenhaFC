@@ -1,6 +1,6 @@
 object DefaultConfig {
-    const val APP_NAME = "ResenhaFC"
-    const val APPLICATION_ID = "dev.marcelo.resenha.$APP_NAME"
+    const val APP_NAME = "resenha"
+    const val APPLICATION_ID = "dev.marcelo.$APP_NAME"
 
     const val COMPILE_SDK_VERSION = 35
     const val MIN_SDK_VERSION = 28
