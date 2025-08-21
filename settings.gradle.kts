@@ -23,6 +23,8 @@ dependencyResolutionManagement {
 }
 
 include(":composeApp")
+include(":core-ui")
+
 
 kover {
     enableCoverage()
