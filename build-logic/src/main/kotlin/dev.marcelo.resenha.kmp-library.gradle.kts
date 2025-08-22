@@ -14,6 +14,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization")
     id("kotlin-kapt")
     id("kotlin-parcelize")
+    id("dev.marcelo.resenha.detekt")
 }
 
 kotlin {

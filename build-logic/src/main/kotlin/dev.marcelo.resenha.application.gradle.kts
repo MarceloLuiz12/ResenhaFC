@@ -10,6 +10,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.multiplatform")
     id("kotlin-parcelize")
+    id("dev.marcelo.resenha.detekt")
 }
 
 kotlin {

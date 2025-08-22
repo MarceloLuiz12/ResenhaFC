@@ -26,6 +26,9 @@ ktor = "3.2.3"
 # Koin
 koin = "4.1.0"
 
+# Lint
+detekt = "1.23.6"
+
 [libraries]
 # --- Kotlin ---
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -53,6 +56,7 @@ navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-co
 android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 serialization-plugin = { module = "org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin", version.ref = "kotlin" }
+detekt-gradle-plugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
 
 # --- Ktor ---
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
