@@ -3,26 +3,27 @@ plugins {
     id("dev.marcelo.resenha.application")
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
     sourceSets {
         androidMain.dependencies {
+            implementation(libs.koin.android)
             implementation(compose.preview)
-            implementation(libs.androidx.activity.compose)
+            implementation(libs.lottie)
         }
         commonMain.dependencies {
-            implementation(compose.runtime)
-            implementation(compose.foundation)
+            implementation(projects.featureAuth)
+            implementation(projects.coreUi)
+
+            implementation(libs.koin.compose.viewmodel.navigation)
+
             implementation(compose.material3)
             implementation(compose.ui)
             implementation(compose.components.resources)
-            implementation(compose.components.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodel.compose)
-            implementation(libs.androidx.lifecycle.runtime.compose)
-        }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
+
+            implementation(libs.koin.core)
         }
     }
 }

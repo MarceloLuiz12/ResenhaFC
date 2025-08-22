@@ -24,8 +24,7 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":core-ui")
-include(":core-navigation")
-
+include(":feature-auth")
 
 kover {
     enableCoverage()
