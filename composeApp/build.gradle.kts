@@ -16,6 +16,7 @@ kotlin {
         commonMain.dependencies {
             implementation(projects.featureAuth)
             implementation(projects.coreUi)
+            implementation(projects.coreNetworking)
 
             implementation(libs.koin.compose.viewmodel.navigation)
 

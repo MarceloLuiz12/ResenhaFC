@@ -10,9 +10,8 @@ buildkonfig {
     packageName = "core.networking"
 
     defaultConfigs {
-        buildConfigField(FieldSpec.Type.STRING, "HOST", "Hello World")
+        buildConfigField(FieldSpec.Type.STRING, "HOST", "https://viacep.com.br/ws/")
     }
-
 }
 
 kotlin {
