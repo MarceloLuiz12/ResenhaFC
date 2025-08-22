@@ -24,6 +24,7 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":core-ui")
+include(":core-networking")
 include(":feature-auth")
 
 kover {
