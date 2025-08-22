@@ -90,12 +90,13 @@ jobs:
 
       - name: Build iosApp via Xcode
         run: |
+          export IDEFileSystemSynchronizedGroupsEnabled=YES
           xcodebuild \
-            -project iosApp/iosApp.xcodeproj \
-            -scheme iosApp \
-            -sdk iphonesimulator \
-            -configuration Debug \
-            build
+         -project iosApp/iosApp.xcodeproj \
+         -scheme iosApp \
+          -sdk iphonesimulator \
+          -configuration Debug \
+          build
 
       - name: Run iOS/CommonMain unit tests
         run: ./gradlew iosSimulatorArm64Test
