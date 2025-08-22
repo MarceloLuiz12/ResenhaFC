@@ -13,10 +13,11 @@ kotlin {
 
         commonMain.dependencies {
 
+            implementation(projects.coreNetworking)
+
             implementation(compose.components.resources)
             implementation(compose.material3)
             implementation(compose.ui)
-
 
             implementation(libs.koin.compose.viewmodel.navigation)
 

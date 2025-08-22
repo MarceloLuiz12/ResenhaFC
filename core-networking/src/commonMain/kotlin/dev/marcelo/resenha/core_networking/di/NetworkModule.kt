@@ -24,16 +24,12 @@ import org.koin.dsl.module
 
 val netWorkModule = module {
     single {
-        provideKtorHttpClient(
-            baseUrl = get(QualifierHost)
-        )
+        provideKtorHttpClient()
     }
 }
 
 object NetworkModule {
-     internal fun provideKtorHttpClient(
-        baseUrl: String,
-    ): HttpClient {
+    internal fun provideKtorHttpClient(): HttpClient {
         return HttpClient(engine = httpClientEnginePlatform()) {
             expectSuccess = false
 
@@ -48,7 +44,6 @@ object NetworkModule {
             }
 
             defaultRequest {
-                url(baseUrl)
                 contentType(ContentType.Application.Json)
                 accept(ContentType.Application.Json)
             }
