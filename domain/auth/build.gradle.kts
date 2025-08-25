@@ -1,21 +1,8 @@
-
 plugins {
-    id("org.jetbrains.kotlin.multiplatform")
+    id("dev.marcelo.resenha.domain")
 }
 
 kotlin {
-    jvm()
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "resenha"
-            isStatic = true
-        }
-    }
-
     sourceSets {
         commonMain.dependencies{
             implementation(libs.koin.core)
