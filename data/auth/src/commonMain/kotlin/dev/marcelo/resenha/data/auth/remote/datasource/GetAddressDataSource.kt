@@ -1,4 +1,4 @@
-package dev.marcelo.resenha.data.auth.datasource
+package dev.marcelo.resenha.data.auth.remote.datasource
 
 import dev.marcelo.resenha.domain.auth.model.AddressModel
 import kotlinx.coroutines.flow.Flow

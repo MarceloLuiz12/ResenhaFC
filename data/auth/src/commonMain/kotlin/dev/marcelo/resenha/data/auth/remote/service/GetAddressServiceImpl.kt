@@ -1,8 +1,8 @@
-package dev.marcelo.resenha.data.auth.service
+package dev.marcelo.resenha.data.auth.remote.service
 
 import dev.marcelo.resenha.core_networking.handler_error.GenericResponse
-import dev.marcelo.resenha.core_networking.handler_error.safeRequest
-import dev.marcelo.resenha.data.auth.model.AddressResponse
+import dev.marcelo.resenha.core_networking.safeRequest
+import dev.marcelo.resenha.data.auth.remote.model.AddressResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.request.url
 

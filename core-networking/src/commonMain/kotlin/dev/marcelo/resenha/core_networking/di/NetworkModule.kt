@@ -22,14 +22,14 @@ import kotlinx.io.IOException
 import kotlinx.serialization.json.Json
 import org.koin.dsl.module
 
-val netWorkModule = module {
-    single {
-        provideKtorHttpClient()
-    }
-}
-
 object NetworkModule {
-    internal fun provideKtorHttpClient(): HttpClient {
+
+    val netWorkModule = module {
+        single {
+            provideKtorHttpClient()
+        }
+    }
+    private fun provideKtorHttpClient(): HttpClient {
         return HttpClient(engine = httpClientEnginePlatform()) {
             expectSuccess = false
 

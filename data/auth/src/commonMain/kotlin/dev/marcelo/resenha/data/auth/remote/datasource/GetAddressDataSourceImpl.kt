@@ -1,9 +1,9 @@
-package dev.marcelo.resenha.data.auth.datasource
+package dev.marcelo.resenha.data.auth.remote.datasource
 
 import dev.marcelo.resenha.core_networking.handler_error.toFlow
-import dev.marcelo.resenha.data.auth.service.GetAddressService
+import dev.marcelo.resenha.data.auth.remote.service.GetAddressService
 import dev.marcelo.resenha.domain.auth.model.AddressModel
-import dev.marcelo.resenha.data.auth.mapper.toModel
+import dev.marcelo.resenha.data.auth.remote.mapper.toModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

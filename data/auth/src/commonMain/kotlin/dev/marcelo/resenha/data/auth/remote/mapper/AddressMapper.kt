@@ -1,6 +1,6 @@
-package dev.marcelo.resenha.data.auth.mapper
+package dev.marcelo.resenha.data.auth.remote.mapper
 
-import dev.marcelo.resenha.data.auth.model.AddressResponse
+import dev.marcelo.resenha.data.auth.remote.model.AddressResponse
 import dev.marcelo.resenha.domain.auth.model.AddressModel
 
 fun AddressResponse.toModel(): AddressModel {

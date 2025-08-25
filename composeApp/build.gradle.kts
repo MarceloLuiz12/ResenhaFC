@@ -14,7 +14,7 @@ kotlin {
             implementation(libs.lottie)
         }
         commonMain.dependencies {
-            implementation(projects.featureAuth)
+            implementation(projects.features.auth)
             implementation(projects.coreUi)
             implementation(projects.coreNetworking)
             implementation(projects.domain.auth)

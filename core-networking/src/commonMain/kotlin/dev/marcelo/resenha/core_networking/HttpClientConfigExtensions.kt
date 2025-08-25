@@ -1,5 +1,7 @@
-package dev.marcelo.resenha.core_networking.handler_error
+package dev.marcelo.resenha.core_networking
 
+import dev.marcelo.resenha.core_networking.handler_error.GenericResponse
+import dev.marcelo.resenha.core_networking.handler_error.NetWorkFailure
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.HttpRequestBuilder
