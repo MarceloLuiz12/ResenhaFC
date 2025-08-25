@@ -14,6 +14,7 @@ kotlin {
         commonMain.dependencies {
 
             implementation(projects.coreNetworking)
+            implementation(projects.domain.auth)
 
             implementation(compose.components.resources)
             implementation(compose.material3)

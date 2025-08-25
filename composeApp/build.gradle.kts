@@ -17,6 +17,8 @@ kotlin {
             implementation(projects.featureAuth)
             implementation(projects.coreUi)
             implementation(projects.coreNetworking)
+            implementation(projects.domain.auth)
+            implementation(projects.data.auth)
 
             implementation(libs.koin.compose.viewmodel.navigation)
 

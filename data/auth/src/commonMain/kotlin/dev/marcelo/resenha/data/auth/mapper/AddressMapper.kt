@@ -1,7 +1,7 @@
-package dev.marcelo.resenha.feature_auth.domain.mapper
+package dev.marcelo.resenha.data.auth.mapper
 
-import dev.marcelo.resenha.feature_auth.data.model.AddressResponse
-import dev.marcelo.resenha.feature_auth.domain.model.AddressModel
+import dev.marcelo.resenha.data.auth.model.AddressResponse
+import dev.marcelo.resenha.domain.auth.model.AddressModel
 
 fun AddressResponse.toModel(): AddressModel {
     return AddressModel(

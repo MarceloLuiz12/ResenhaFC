@@ -1,4 +1,4 @@
-package dev.marcelo.resenha.feature_auth.domain.model
+package dev.marcelo.resenha.domain.auth.model
 
 data class AddressModel(
     val street: String,

@@ -3,7 +3,7 @@ package dev.marcelo.resenha.feature_auth.login
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.marcelo.resenha.core_networking.handler_error.catchFailure
-import dev.marcelo.resenha.feature_auth.domain.usecase.GetAddressUseCase
+import dev.marcelo.resenha.domain.auth.usecase.GetAddressUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.onStart

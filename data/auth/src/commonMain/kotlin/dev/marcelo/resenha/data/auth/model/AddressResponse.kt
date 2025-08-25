@@ -1,4 +1,4 @@
-package dev.marcelo.resenha.feature_auth.data.model
+package dev.marcelo.resenha.data.auth.model
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

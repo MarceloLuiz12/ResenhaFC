@@ -26,6 +26,10 @@ include(":composeApp")
 include(":core-ui")
 include(":core-networking")
 include(":feature-auth")
+include(":domain")
+include(":domain:auth")
+include(":data")
+include(":data:auth")
 
 kover {
     enableCoverage()
